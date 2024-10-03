@@ -1,0 +1,66 @@
+{
+  "title": "Shoda - Soda for Gutsy People",
+  "meta_description": "Discover the refreshing taste of Shoda, focused on gut health, featuring low-calorie, big-flavor drinks made with natural ingredients.",
+  "meta_title": "Shoda - Soda for Gutsy People",
+  "meta_image": {
+    "url": "https://images.prismic.io/fizzi/ZswEvEaF0TcGJYaC_OGImage.png?auto=format,compress&rect=0,0,1200,630&w=2400&h=1260"
+  },
+  "slices": [
+    {
+      "slice_type": "hero",
+      "primary": {
+        "heading": "Live Gutsy",
+        "subheading": "Soda Perfected",
+        "body": "3-5g sugar. 9g fiber. 5 delicious flavors.",
+        "button_text": "Shop Now",
+        "button_link": "#",
+        "cans_image": {
+          "url": "https://images.prismic.io/fizzi/ZswEvEaF0TcGJYaB_all-cans-bunched.png?auto=format,compress",
+          "alt": "All of the Shoda Flavors"
+        },
+        "second_heading": "Try all five flavors",
+        "second_body": "Our soda is made with real fruit juice and a touch of cane sugar. We never use artificial sweeteners or high fructose corn syrup. Try all five flavors and find your favorite!"
+      }
+    },
+    {
+      "slice_type": "sky_dive",
+      "primary": {
+        "sentence": "Dive into better health",
+        "flavor": "coca"
+      }
+    },
+    {
+      "slice_type": "carousel",
+      "primary": {
+        "heading": "Choose Your Flavor",
+        "price_copy": "12 cans - ₹499.99"
+      }
+    },
+    {
+      "slice_type": "alternating_text",
+      "primary": {
+        "text_group": [
+          {
+            "heading": "Gut-Friendly Goodness",
+            "body": "Our soda is packed with prebiotics and 1 billion probiotics, giving your gut the love it deserves. Say goodbye to bloating and hello to a happy, healthy digestive system with every sip."
+          },
+          {
+            "heading": "Light Calories, Big Flavor",
+            "body": "Indulge in bold, refreshing taste without the guilt. At just 20 calories per can, you can enjoy all the flavor you crave with none of the compromise."
+          },
+          {
+            "heading": "Naturally Refreshing",
+            "body": "Made with only the best natural ingredients, our soda is free from artificial sweeteners and flavors. It’s a crisp, clean taste that feels as good as it tastes, giving you a boost of real, natural refreshment."
+          }
+        ]
+      }
+    },
+    {
+      "slice_type": "big_text",
+      "primary": {
+        "heading": "Choose Your Flavor",
+        "price_copy": "12 cans - ₹499.99"
+      }
+    }
+  ]
+}
