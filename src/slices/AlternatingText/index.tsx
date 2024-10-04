@@ -2,11 +2,7 @@
 
 import { Bounded } from "@/components/Bounded";
 import { asText, Content } from "@prismicio/client";
-import {
-  PrismicRichText,
-  PrismicText,
-  SliceComponentProps,
-} from "@prismicio/react";
+import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import { View } from "@react-three/drei";
 import Scene from "./Scene";
 import clsx from "clsx";
@@ -35,22 +31,22 @@ const AlternatingText = ({ slice }: AlternatingTextProps): JSX.Element => {
 
           {slice.primary.text_group.map((item, index) => (
             <div
-              key={item.heading}
+              key={index}
               className="alternating-section grid h-screen place-items-center gap-x-12 md:grid-cols-2"
             >
               <div
                 className={clsx(
                   index % 2 === 0 ? "col-start-1" : "md:col-start-2",
-
                   "rounded-lg p-4 backdrop-blur-lg max-md:bg-white/30",
                 )}
               >
                 <h2 className="text-balance text-6xl font-bold">
-                  <h1>{item.heading}</h1>
-                  {/* <PrismicText field={item.heading} /> */}
+                  {String(item.heading)}
                 </h2>
                 <div className="mt-4 text-xl">
-                  <h1>{item.body}</h1>
+                  <h2 className="text-balance text-6xl font-bold">
+                    {String(item.body)}
+                  </h2>
                   {/* <PrismicRichText field={item.body} /> */}
                 </div>
               </div>

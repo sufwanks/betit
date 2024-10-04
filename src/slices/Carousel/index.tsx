@@ -1,6 +1,6 @@
 "use client";
 
-import { Content } from "@prismicio/client";
+import { asText, Content } from "@prismicio/client";
 import { SliceComponentProps } from "@prismicio/react";
 import { Center, Environment, View } from "@react-three/drei";
 import { useRef, useState } from "react";
@@ -82,7 +82,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
       <WavyCircles className="absolute left-1/2 top-1/2 h-[120vmin] -translate-x-1/2 -translate-y-1/2 text-[#710523]" />
 
       <h2 className="relative text-center text-5xl font-bold">
-        <h1>{slice.primary.heading}</h1>
+        <h1>{String(slice.primary.heading)}</h1>
         {/* <PrismicText field={slice.primary.heading} /> */}
       </h2>
 
@@ -124,7 +124,7 @@ const Carousel = ({ slice }: CarouselProps): JSX.Element => {
           <p>{FLAVORS[currentFlavorIndex].name}</p>
         </div>
         <div className="mt-2 text-2xl font-normal opacity-90">
-          <h2>{slice.primary.price_copy}</h2>
+          <h2>{String(slice.primary.price_copy)}</h2>
           {/* <PrismicRichText field={slice.primary.price_copy} /> */}
         </div>
       </div>
