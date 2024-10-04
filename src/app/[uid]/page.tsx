@@ -6,7 +6,6 @@ import * as prismic from "@prismicio/client";
 
 import { createClient } from "@/prismicio";
 import { components } from "@/slices";
-import TestData from "@/components/TestData";
 
 type Params = { uid: string };
 
