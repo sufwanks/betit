@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import { SliceZone } from "@prismicio/react";
-import * as prismic from "@prismicio/client";
 import { components } from "@/slices";
 // Import the local data
 import homeData from "../../public/data/homeData.json";
@@ -17,5 +16,10 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function Index() {
-  return <SliceZone slices={homeData.slices} components={components} />;
+  const slicesWithIds = homeData.slices.map((slice, index) => ({
+    ...slice,
+    id: slice?.id && `slice-${index}`, // Add an id if missing
+  }));
+
+  return <SliceZone slices={slicesWithIds} components={components} />;
 }
