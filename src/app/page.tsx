@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
     description: homeData.meta_description,
     openGraph: {
       title: homeData.meta_title ?? undefined,
-      images: [{ url: homeData.meta_image.url ?? "" }],
+      // images: [{ url: homeData.meta_image.url ?? "" }],
     },
   };
 }
