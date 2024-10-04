@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Index() {
   const slicesWithIds = homeData.slices.map((slice, index) => ({
     ...slice,
-    id: slice?.id && `slice-${index}`, // Add an id if missing
+    id: `slice-${index}`, // Add an id if missing
   }));
 
   return <SliceZone slices={slicesWithIds} components={components} />;
